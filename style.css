@@ -135,6 +135,91 @@ font-style: normal;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
 }
+.some{
+    color: var(--dark-01, #131313);
+font-family: Work Sans;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.te{
+    color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+
+/*facts*/
+.co{
+    display:flex;
+    justify-content: space-around;
+    padding:100px 100px;
+    
+}
+.card{
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding:0px 30px;
+
+}
+.card-start{
+    color: var(--dark-02, #424242);
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;;
+
+}
+.card-title{
+    color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+.card img{
+    margin-top:45px;
+    margin-bottom: 10px;
+  
+}
+.spon{
+    text-align: center;
+}
+.hee{
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.paa{
+    color: var(--dark-03, #727272);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.spo-image{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+}
+.spo-image img{
+    width: 165.833px;
+}
 
 
 
@@ -152,15 +237,18 @@ line-height: 26px; /* 162.5% */
         padding:20px;
     }
     nav,
-    .feature{
+    .feature,.co,.spo-image{
         flex-direction: column;
     }
     .image-section{
         grid-template-columns: 1fr;
     }
-    .text-section{
+    .text-section, .co{
         padding-left:20px;
         padding-right: 20px;
+    }
+    .co{
+        gap:20px;
     }
 }
 /*tablet or medium devices*/
@@ -169,7 +257,7 @@ line-height: 26px; /* 162.5% */
         padding:50px;
     }
     nav,
-    .feature{
+    .feature,.spo-image{
         flex-direction: column;
     }
     .image-section{
